@@ -1,3 +1,8 @@
 db.sqlite3
 __pycache__/
 *.pyc
+.DS_Store
+squirrel_app/.DS_Store
+squirrel_app/templates/.DS_Store
+env/
+.idea/
