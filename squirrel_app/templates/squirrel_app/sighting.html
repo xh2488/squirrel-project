@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Squirrel Sightings</title>
+</head>
+    <body>
+    <form action='sightings/add'><input type='submit' value='Add Squirrel'/></form>
+    <ul>
+        {% for squirrel in squirrel_list %}
+            <li> <a href={{"sightings/"|add:squirrel.Unique_Squirrel_ID}}> Squirrel Id is {{squirrel.Unique_Squirrel_ID }}, Date is {{ squirrel.Date }}</a></li>
+        {% endfor %}
+    </ul>
+    </body>
+</html>
