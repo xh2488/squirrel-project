@@ -245,3 +245,4 @@ class squirrel_info(models.Model):
 
 
 
+
