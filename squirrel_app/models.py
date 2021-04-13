@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils.translation import gettext as _
-
+from django.forms import ModelForm
 
 
 
@@ -199,7 +199,6 @@ class squirrel_info(models.Model):
         null=True,
         blank=True,
     )
-
     Tail_twitches = models.BooleanField(
         help_text=_('If the squirrel is seen twitching its tail'),
         null=True,
@@ -231,6 +230,10 @@ class squirrel_info(models.Model):
         max_length=50,
     )
 
+class AddSquirrelForm(ModelForm):
+    class Meta:
+        model = squirrel_info
+        fields = ['Longtitude', "Latitude", "Unique_Squirrel_ID", "Shift", "Date", "Age", "Primary_fur_color", "Location", "Specific_location", "Running", "Chasing", "Climbing", "Eating", "Foraging", "Other_activities", "Kuks", "Quaas", "Moans", "Tail_flags", "Tail_twitches", "Approaches", "Indifferent", "Runs_from"]
 
 
 
