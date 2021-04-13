@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from squirrel_app.models import squirrel_info
 from django.shortcuts import get_object_or_404
-import pandas as pd
+# import pandas as pd
 
 def map(request):
     location_list = list(squirrel_info.objects.values("Longtitude","Latitude"))[:100]
