@@ -7,3 +7,4 @@ sqlparse==0.4.1
 python-dateutil==2.8.1
 django-storages[google]==1.9.1
 psycopg2-binary==2.8.5
+
