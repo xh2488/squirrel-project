@@ -8,3 +8,15 @@ handlers:
 
      - url: /.*
        script: auto
+
+
+env_variables:
+    DEBUG: 'true'
+    INSTANCE_CONNECTION_NAME: 'x-catwalk-308822:us-east1:squirrel'  # eg. 'ieor-tools-for-analytics:asia-east1:adopt'
+    PGDATABASE: 'postgres'
+    PGUSER: 'postgres'
+    PGPASSWORD: 'Lhsqm3KzwLorczjf'
+    SECRET_KEY: 'django-insecure-q6o3g6f2^z1t5o^qvb+foc4i-a(tsgo26=lc00$%ia5kd+658)'
+    GS_BUCKET_NAME: 'x-catwalk-308822.appspot.com'
+    GOOGLE_APPLICATION_CREDENTIALS: 'x-catwalk-308822-048ea222db81.json'  # eg. 'service-account-key.json'
+
