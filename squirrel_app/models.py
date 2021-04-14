@@ -23,7 +23,7 @@ class squirrel_info(models.Model):
     )
 
     Unique_Squirrel_ID = models.CharField(
-        max_length=50,
+        max_length=500,
         help_text=_('The unique ID of the squirrel'),
         null=True,
         blank=True,
@@ -32,7 +32,7 @@ class squirrel_info(models.Model):
 
 
     Hectare = models.CharField(
-        max_length=50,
+        max_length=500,
         help_text=_('Hector grid ID'),
         null=True,
         blank=True,
@@ -47,7 +47,7 @@ class squirrel_info(models.Model):
 
 
     Shift = models.CharField(
-        max_length=50,
+        max_length=500,
         help_text=_('Whether the sighting session occurred in the morning or afternoon'),
         choices=SHIFT_CHOICE,
         null=True,
@@ -55,7 +55,7 @@ class squirrel_info(models.Model):
     )
 
     Date = models.CharField(
-        max_length=50,
+        max_length=500,
         help_text='Sighting session date',
         null=True,
         blank=True,
@@ -75,7 +75,7 @@ class squirrel_info(models.Model):
     ]
 
     Age = models.CharField(
-        max_length=50,
+        max_length=500,
         help_text='Age, either Adult or Juvenile',
         choices=AGE_CHOICE,
         null=True,
@@ -93,7 +93,7 @@ class squirrel_info(models.Model):
     ]
 
     Primary_fur_color = models.CharField(
-        max_length=50,
+        max_length=500,
         help_text='The primary fur color of the squirrels',
         choices=COLOR_CHOICE,
         null=True,
@@ -101,21 +101,21 @@ class squirrel_info(models.Model):
     )
 
     Highlight_fur_color = models.CharField(
-        max_length=50,
+        max_length=500,
         help_text='The highlight fur color of the squirrels',
         null=True,
         blank=True,
     )
 
     combination_color = models.CharField(
-        max_length=50,
+        max_length=500,
         help_text='Permutations of primary and highlight colors observed',
         null=True,
         blank=True,
     )
 
     Color_notes = models.CharField(
-        max_length=50,
+        max_length=500,
         help_text='commentary on the squirrel ',
         null=True,
         blank=True,
@@ -131,7 +131,7 @@ class squirrel_info(models.Model):
     ]
 
     Location = models.CharField(
-        max_length=50,
+        max_length=500,
         help_text='Location of the squirrel, either Ground Plane or Above Ground ',
         # choices=LOCATION_CHOICE,
         null=True,
@@ -139,7 +139,7 @@ class squirrel_info(models.Model):
     )
 
     Specific_location = models.CharField(
-        max_length=50,
+        max_length=500,
         help_text='Specific location of the squirrel ',
         null=True,
         blank=True,
@@ -227,7 +227,7 @@ class squirrel_info(models.Model):
         help_text=_('If there is any other types of interactions between squirrels and humans'),
         null=True,
         blank=True,
-        max_length=50,
+        max_length=500,
     )
 
 class AddSquirrelForm(ModelForm):
