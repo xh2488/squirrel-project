@@ -1,5 +1,5 @@
 # squirrel-project
-IEOR E4501 Final Project - Xiao Huang, Hui Chen
+IEOR E4501 Final Project - Xiao Huang(xh2488), Hui Chen(hc3255)
 
 ## Description 
 This is a Django-based project which keeps track of all the known squirrels in the central park, New York City. There are five views available in total, respectively shows:
@@ -13,7 +13,7 @@ This is a Django-based project which keeps track of all the known squirrels in t
 Project Group 13, Section: Wednesday 7pm - 9pm
 
 ## UNI
-UNIs:[xh2455, hc3255]
+UNIs:[xh2488, hc3255]
 
 ## Deploy link
 http://x-catwalk-308822.ue.r.appspot.com
