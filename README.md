@@ -17,3 +17,12 @@ UNIs:[xh2488, hc3255]
 
 ## Deploy link
 http://x-catwalk-308822.ue.r.appspot.com
+
+## Installation Guidance
+1. pip install -r requirements.txt
+2. python3 manage.py migrate
+3. python3 manage.py import_squirrel_data <csv_file_path>\
+(The csv can be found in the folder as well)
+4. python3 manage.py runserver
+5. python3 manage.py export_squirrel_data <export_path>\
+(Used to export data)
